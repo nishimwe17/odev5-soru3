@@ -1,1 +1,32 @@
-# odev5-soru3
+#include<stdio.h>
+
+int main()
+{
+	int line,p,q,space,pCq;
+	printf("enter the number of lines for your triangle\n");
+	scanf("%d",&line);
+	
+	for(p=0;p<line;p++)
+	{
+		for(space=1;space<(line-p);space++)
+		{
+			printf(" ");
+		}
+		for(q=0;q<=p;q++)//for printing numbers
+		{
+			if(p==0 || q==0)
+			{
+
+				pCq=1;
+				printf("%d ",pCq);// the space after d because we have to give space between every two numbers
+			}
+			else
+			{
+				pCq=pCq*(p-q+1) / q;//pCq is calcuted referring at the previous number of q
+				printf("%d ",pCq);
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
