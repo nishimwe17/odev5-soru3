@@ -22,7 +22,7 @@ int main()
 			}
 			else
 			{
-				pCq=pCq*(p-q+1) / q;//pCq is calcuted referring at the previous number of q
+				pCq=pCq*(p-q+1) / q;//pCq is calcuted referring to the previous number of q
 				printf("%d ",pCq);
 			}
 		}
